@@ -21,7 +21,6 @@ Use the following rules for names that work across LanceDB Embedded and LanceDB 
 | Table, materialized view, view | ASCII letters and digits, `-`, `_`, `.` | 1 to 128 characters |
 | Namespace component | ASCII letters and digits, `-`, `_`, `.` | 1 to 64 characters; at most 10 components in a path |
 | Database | ASCII letters and digits, `-`, `_`, `.`, with `/` between components | 1 to 64 characters for the whole name |
-| Branch | Avoid `$` and `:`; use ASCII letters, digits, `-` and `_` for portability | Keep to 1 to 64 characters |
 | Secret | ASCII letters and digits, `-`, `_`, `.` | 1 to 128 characters |
 | Function | ASCII letters and digits, `_` | 1 to 128 characters |
 
@@ -60,5 +59,4 @@ The empty path `[]` identifies the root namespace.
 ## Learn more {#next}
 
 - [Namespaces](/management/namespace): create namespaces and address tables.
-- [Branches](/tables/branching): name and manage separate lines of table history.
 - [Limits](/basics/limits): check other constraints before designing your schema.
